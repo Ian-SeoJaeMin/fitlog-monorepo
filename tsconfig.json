@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // 기본옵션
+    "incremental": true,
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true,
+    "removeComments": true,
+    // 타입 옵션
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    // 모듈 해석 옵션
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+      "@modules/*": [
+        "node_modules/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // nest 데코레이터 옵션
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // 추가 옵션
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false
+  }
+}
