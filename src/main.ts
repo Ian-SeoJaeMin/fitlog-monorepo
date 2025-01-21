@@ -17,6 +17,7 @@ async function bootstrap() {
         })
     );
 
-    await app.listen(process.env.PORT ?? 3000);
+    await app.listen(process.env.PORT ?? 10001);
+    console.log(`fitlog-monorepo server is running on port ${process.env.PORT}`);
 }
 bootstrap();
