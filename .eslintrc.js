@@ -2,7 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
-    tsconfigRootDir : __dirname, 
+    tsconfigRootDir: __dirname,
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint/eslint-plugin'],
@@ -22,5 +22,9 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'off',
     'import/no-unresolved': 'off',
     'no-return-await': 'error',
+    'no-unused-vars': 'off',
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "prefer-const": "warn"
   },
 };
